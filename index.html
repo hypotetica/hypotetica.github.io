@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hypotetica</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap"><style>
+/* Layout: one narrow reading column, a compact brand strip, two documents reachable by anchor (#terms, #privacy) */
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --fg: #141a26; --muted: #556074; --rule: #dde2ea; --accent: #c85f0a;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e131c; --surface: #151c28; --fg: #e8ecf3; --muted: #9aa5b8; --rule: #2a3343; --accent: #ff9a3c; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0e131c; --surface: #151c28; --fg: #e8ecf3; --muted: #9aa5b8; --rule: #2a3343; --accent: #ff9a3c; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 1.02rem; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 42rem; margin: 0 auto; padding-block: 2.5rem 4rem; display: flex; flex-direction: column; gap: 2.25rem; }
+header { display: flex; flex-direction: column; gap: .5rem; }
+.brand { font-family: var(--display); font-weight: 700; font-size: 2.6rem; letter-spacing: .01em; line-height: 1; }
+.brand span { color: var(--accent); }
+.lead { color: var(--muted); margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-family: var(--display); font-weight: 600; font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; }
+nav a { color: var(--accent); text-decoration: none; border-bottom: 2px solid transparent; }
+nav a:hover, nav a:focus-visible { border-bottom-color: var(--accent); outline: none; }
+section { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 1.5rem clamp(1rem, 4vw, 2rem); display: flex; flex-direction: column; gap: .9rem; min-width: 0; }
+h2 { font-family: var(--display); font-weight: 700; font-size: 1.9rem; line-height: 1.1; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--display); font-weight: 600; font-size: 1.15rem; letter-spacing: .05em; text-transform: uppercase; margin: .6rem 0 0; color: var(--accent); }
+p, ul { margin: 0; max-width: 65ch; }
+ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: .35rem; }
+.date { color: var(--muted); font-size: .9rem; }
+.contact { font-family: var(--body); font-weight: 700; user-select: all; overflow-wrap: anywhere; }
+footer { color: var(--muted); font-size: .85rem; }
+</style><style>body{margin:0}</style></head>
+<body><div class="wrap"><header>
+    <div class="brand">Hypotetica<span>?</span></div>
+    <p class="lead">Short vertical videos that push science and engineering "what if" scenarios to the extreme. This page covers the Hypotetica Publisher, the desktop tool the Hypotetica creator uses to send its own videos to TikTok.</p>
+    <nav><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+  </header><section id="terms">
+    <h2>Terms of Service</h2>
+    <p class="date">Effective November 3, 2026</p>
+    <h3>What the tool is</h3>
+    <p>Hypotetica Publisher is a desktop application that runs on the Hypotetica creator's own computer. It uploads videos produced by Hypotetica to the creator's own TikTok account as drafts. The creator then reviews, edits and publishes each draft inside the TikTok app.</p>
+    <h3>Who may use it</h3>
+    <p>The tool is operated only by the Hypotetica creator for the Hypotetica account. It is not offered to the public and has no sign-up.</p>
+    <h3>Content</h3>
+    <p>Only original content created by Hypotetica is uploaded. The creator is responsible for every video and caption and must follow TikTok's Terms of Service and Community Guidelines.</p>
+    <h3>TikTok</h3>
+    <p>Hypotetica Publisher is not affiliated with or endorsed by TikTok. Access to TikTok goes through TikTok's official Login Kit and Content Posting API, and can be revoked at any time from TikTok's settings.</p>
+    <h3>No warranty</h3>
+    <p>The tool is provided as is, without warranties of any kind. Hypotetica may change or discontinue it at any time.</p>
+    <h3>Contact</h3>
+    <p>Questions about these terms: <span class="contact">hypotetica22@gmail.com</span></p>
+  </section><section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="date">Effective November 3, 2026</p>
+    <h3>Data received from TikTok</h3>
+    <ul>
+      <li>Basic profile information of the authorizing account (open ID, display name, avatar), through the <code>user.info.basic</code> scope, used to confirm that uploads go to the right account.</li>
+      <li>Access and refresh tokens issued by TikTok, used only to upload drafts through the <code>video.upload</code> scope.</li>
+    </ul>
+    <h3>How it is stored</h3>
+    <p>All data stays on the creator's own computer in a local file. Nothing is sent to servers run by Hypotetica, because there are none. No analytics, advertising or tracking tools are used.</p>
+    <h3>Sharing</h3>
+    <p>Data is never sold, rented or shared with third parties. The only exchange is with TikTok itself, to upload the videos.</p>
+    <h3>Other people's data</h3>
+    <p>The tool does not access viewers, followers, comments, messages or any account other than the authorizing one.</p>
+    <h3>Retention and deletion</h3>
+    <p>Tokens are kept only while the tool is in use and are deleted from the computer when access is revoked. Access can be revoked at any time from TikTok's settings under security and permissions, which immediately stops the tool from uploading.</p>
+    <h3>Children</h3>
+    <p>The tool is not directed to children and does not knowingly process children's data.</p>
+    <h3>Changes and contact</h3>
+    <p>Changes to this policy will be published on this page with a new effective date. Requests or questions: <span class="contact">hypotetica22@gmail.com</span></p>
+  </section><footer>Hypotetica · original videos made with simulations and synthetic narration.</footer></div></body></html>
